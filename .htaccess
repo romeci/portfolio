@@ -1,0 +1,13 @@
+RewriteEngine On
+Options All -Indexes
+
+# Exclui as requisições para o diretório 'assets'
+RewriteCond %{REQUEST_URI} !^/assets/public/.*$ [NC]
+RewriteCond %{REQUEST_URI} !^/public/.*$ [NC]
+
+# Verifica se o arquivo ou diretório existe e evita reescrever
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Reescreve a URL para index.php sem alterar a URL visível
+RewriteRule ^(.*)$ index.php [QSA,L]
