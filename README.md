@@ -12,9 +12,7 @@ Atuo na área de T.I desde 2007, com experiências diversas durante este caminho
 - Atendimento Help Desk.
 - Consultoria em T.I.
 
-
-
-----
+------
 
 ### Qualificações ###
 
